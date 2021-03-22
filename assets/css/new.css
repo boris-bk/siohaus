@@ -1,0 +1,30 @@
+h1, .h1 {
+    color: #017152;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.janna {
+    width: 80vw;
+    min-height: calc(100vh - 256px);
+    color: #444;
+    margin: 130px auto 20px auto;
+    position: inherit;
+    box-sizing: border-box;
+    font-size: 2.2rem;
+}
+.janna b{
+    color: #017152;
+}
+.janna img{
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    h1, .h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .janna {
+        width: 96vw;
+        margin-top: 100px;
+    }
+}

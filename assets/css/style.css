@@ -46,8 +46,16 @@ header {
     align-items: center;
     padding: 15px;
 }
+.logo svg {
+    width: 20vw;
+    width: -webkit-fill-available;
+    height: auto;
+}
 .logo p {
-    margin: 2px 0;
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
 }
 .nav-bar {
     width: 40%;
@@ -85,6 +93,9 @@ header {
 }
 .phones a:hover {
     color: #48906f;
+}
+.mob {
+    display: none;
 }
 .menu-bar-wrap {
     display: none;
@@ -610,18 +621,82 @@ nav.shift ul li a:hover:after {
 /* !навигация */
 
 
-@media only screen and (max-width: 1525px) {
-    .menu-bar {
-        width: 90vw;
-        left: 5vw;
-        height: 35px;
+@media only screen and (max-width: 1250px) {
+    body {
+        padding: 10px 1vw;
     }
 }
-@media only screen and (max-width: 1170px) {
-
+@media only screen and (max-width: 1100px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
-@media only screen and (max-width: 1140px) {
-
+@media only screen and (max-width: 1060px) {
+    .logo svg {
+        width: 100%;
+    }
+    .logo p {
+        font-size: 1.6vw;
+        width: fit-content;
+    }
+    nav ul li a {
+        width: 130px;
+    }
+    .navi svg {
+        height: 25px;
+    }
+    .navi p {
+        font-size: 13px;
+    }
+    .phones img {
+        width: 15px;
+        height: 15px;
+    }
+    .phones a {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .logo p {
+        font-size: 2.7vw;
+    }
+    nav ul li {
+        width: 30%;
+    }
+    nav ul li a {
+        width: 100%;
+    }
+    .navi svg {
+        height: 40px;
+    }
+    .navi p {
+        font-size: 2vw;
+    }
+    .phones img {
+        width: 20px;
+        height: 20px;
+        top: 0;
+    }
+    .phones a {
+        font-size: 3.5vw;
+    }
+    nav.fill {
+        width: calc(100vw - 30px);
+    }
+    .mob {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    header {
+        flex-wrap: wrap;
+        background: #ddd;
+    }
+    .middle {
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width: 960px) {
     .menu-bar-wrap h2 {
@@ -660,7 +735,7 @@ nav.shift ul li a:hover:after {
         top: 70px;
     }
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 780px) {
 
 }
 
@@ -678,7 +753,19 @@ nav.shift ul li a:hover:after {
         top: 50px;
     }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
+    .logo p {
+        font-size: 5vw;
+    }
+    a.navbar-brand {
+        width: 100%;
+    }
+    .phones {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 20px 0;
+    }
 
 }
 @media only screen and (max-width: 400px) {
