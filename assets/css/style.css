@@ -138,6 +138,9 @@ header {
     font-size: 60px;
     font-weight: 800;
 }
+.p-h1 {
+    margin: 0 20%
+}
 .middle h3 {
     text-align: start !important;
     margin: 20px 4%;
@@ -222,7 +225,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 4%;
+    margin: 10px 4% 0 4%;
 }
 footer svg {
     width: 20px;
@@ -232,6 +235,19 @@ footer svg {
     border-radius: 50%;
     color: white;
     margin: 0 5px;
+}
+.fa-vk {
+    background: #2787f5;
+}
+.fa-odnoklassniki {
+    background: #ee8208;
+}
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 footer svg:hover {
     box-shadow: 0 0 10px #48906f;
@@ -671,7 +687,7 @@ nav.shift ul li a:hover:after {
         height: 40px;
     }
     .navi p {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .phones img {
         width: 20px;
@@ -679,7 +695,7 @@ nav.shift ul li a:hover:after {
         top: 0;
     }
     .phones a {
-        font-size: 3.5vw;
+        font-size: 3.7vw;
     }
     nav.fill {
         width: calc(100vw - 30px);
@@ -694,8 +710,11 @@ nav.shift ul li a:hover:after {
         flex-wrap: wrap;
         background: #ddd;
     }
-    .middle {
-        margin-top: 20px;
+    .slider__item img {
+        width: 100%;
+    }
+    .slider .slick-dots {
+        margin: 0;
     }
 }
 @media only screen and (max-width: 960px) {
@@ -725,6 +744,48 @@ nav.shift ul li a:hover:after {
     .menu-icon-wrapper {
         display: flex;
     }
+    .mid-vid {
+        flex-wrap: wrap;
+    }
+    .mid-vid iframe {
+        width: 100%;
+    }
+    footer {
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .social, .unp, .phones, .footer-map {
+        width: 50%;
+    }
+    .unp {
+        font-size: 4vw;
+    }
+    .unp p {
+        margin: 0 0 20px 0;
+    }
+    footer .phones {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    footer .phones a {
+        font-size: 3.5vw;
+    }
+    footer svg {
+        width: 30px;
+        height: 30px;
+    }
+    .footer-map {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer-map svg {
+        position: initial;
+    }
+    .footer-map p {
+        margin: 0;
+        font-size: 3vw;
+    }
 }
 @media only screen and (max-width: 840px) {
     .menu-bar {
@@ -736,21 +797,115 @@ nav.shift ul li a:hover:after {
     }
 }
 @media only screen and (max-width: 780px) {
-
+    .middle h1 {
+        font-size: 6vw;
+    }
+    .middle h3 {
+        font-size: 3vw;
+        font-weight: 600;
+        margin: 20px 2% !important;
+    }
+    .p-h1 {
+        margin: 0 10% !important;
+    }
+    .middle p {
+        font-size: 2.5vw;
+        margin: 0 2% !important;
+    }
+    .ficha {
+        width: 45%;
+    }
+    .ficha p {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .mid-vid {
+        margin: 10px 2%;
+    }
+    .mid-vid_p {
+        width: 100%;
+        padding: 0;
+    }
+    .mid-vid_p p {
+        margin: 10px 0 !important;
+    }
+    .border-button {
+        width: 47%;
+    }
+    .project {
+        margin: 0;
+    }
+    .project h4 {
+        font-size: 2.1vw;
+    }
+    .project h4 b {
+        color: #48906f;
+    }
 }
 
 @media only screen and (max-width: 730px) {
-
+    .foot-links {
+        flex-wrap: wrap;
+    }
+    .foot-links a {
+        width: 100%;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 700px) {
 
 }
 @media only screen and (max-width: 550px) {
-    h2, .h2 {
-        font-size: 24px;
-    }
     .menu-bar-wrap {
         top: 50px;
+    }
+    .middle h1 {
+        font-size: 8vw;
+    }
+    .middle h2 {
+        font-size: 7vw;
+    }
+    .middle h3 {
+        font-size: 6vw;
+    }
+    .middle p {
+        font-size: 5vw;
+    }
+    .ficha {
+        width: 80%;
+    }
+    .ficha img {
+        height: 80px;
+    }
+    .border-button {
+        width: 100%;
+    }
+    .project h4 {
+        font-size: 4vw;
+    }
+    .social, .unp, .phones, .footer-map {
+        width: 100%;
+    }
+    .unp p {
+        font-size: 10vw;
+    }
+    footer .phones {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    footer .phones a {
+        font-size: 8vw;
+    }
+    .social {
+        justify-content: space-around;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .footer-map {
+        justify-content: start;
+    }
+    .footer-map p {
+        font-size: 6vw;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -769,7 +924,14 @@ nav.shift ul li a:hover:after {
 
 }
 @media only screen and (max-width: 400px) {
-
+    .phones {
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .phones a {
+        font-size: 7vw;
+        margin: 5px 0;
+    }
 }
 @media only screen and (max-width: 375px) {
 
