@@ -1,3 +1,20 @@
+.navigate {
+    margin: 10px 4%;
+}
+.a-home {
+    color: #444444;
+    font-size: 13px;
+    font-weight: 500;
+}
+.a-home:hover {
+    color: #48906f;
+}
+.a-home svg {
+    width: 20px;
+    color: #444444;
+    position: relative;
+    top: 3px;
+}
 .middle-h1, .strength {
     display: flex;
     margin: 0 4%;
@@ -42,7 +59,7 @@
     position: relative;
 }
 .strength-right img {
-    width: 75% !important;
+    width: 50% !important;
     position: absolute;
     top: -20px;
 }
@@ -61,3 +78,59 @@ ol {
 ol li {
     margin: 10px 0;
 }
+@media only screen and (max-width: 1700px) {
+    .strength-right img {
+        width: 70% !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .strength-right img {
+        width: 90% !important;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .strength-right img {
+        width: 110% !important;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navigate {
+        margin: 10px 2%;
+    }
+    .middle-h1, .strength {
+        margin: 0 2% !important;
+    }
+    .middle-h1 p {
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .middle-h1, .strength {
+        flex-wrap: wrap;
+    }
+    .h1-left, .strength-left {
+        width: 100%;
+    }
+    .img-right, .strength-right {
+        width: 100%;
+    }
+    .strength-right {
+        width: 100% !important;
+    }
+    .img-right img {
+        width: 80% !important;
+    }
+    .strength-right img {
+        width: 50% !important;
+        position: inherit;
+        top: 0;
+    }
+    .strength-left h3, .strength-left p {
+        margin-left: 0 !important;
+    }
+    .build-img {
+        margin-top: 30px;
+    }
+}
+
+

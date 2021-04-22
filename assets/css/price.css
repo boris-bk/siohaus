@@ -1,0 +1,61 @@
+table {
+    table-layout: fixed;
+    width:100%
+}
+td {
+    width: 10%;
+    word-wrap: break-word; /* Перенос слов */
+}
+.navigate {
+    margin: 10px 4%;
+}
+.a-home {
+    color: #444444;
+    font-size: 13px;
+    font-weight: 500;
+}
+.a-home:hover {
+    color: #48906f;
+}
+.a-home svg {
+    width: 20px;
+    color: #444444;
+    position: relative;
+    top: 3px;
+}
+.page {
+    margin: 10px 4%;
+}
+.tprice__h1 {
+    text-align: center;
+}
+.descr {
+    min-height: 30px;
+    font: 300 19px/32px roboto;
+    margin: 0 0 50px 0;
+}
+.tprice__table {
+    overflow: auto;
+    white-space: wrap;
+    display: block;
+    text-align: center;
+    margin: auto !important;
+}
+.tprice__table tr:nth-child(even) {
+    background: #f3f3f3;
+}
+.descr table th {
+    font-weight: bold;
+}
+.tprice__table td, .tprice__table th {
+    padding: 15px !important;
+    font: 300 15px/16px roboto;
+}
+.tprice__h1 {
+    text-align: center;
+}
+.page-h1 {
+    font: 900 60px/60px roboto;
+    margin: 0 0 25px 0;
+    color: #4a4a4a;
+}

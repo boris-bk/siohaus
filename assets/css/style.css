@@ -71,7 +71,6 @@ header {
 }
 .navi svg{
     height: 40px;
-    color: #9C7262;
 }
 .navi p {
     margin: 0;
@@ -412,8 +411,8 @@ footer svg:hover {
 .border-button:after {
     top: 0;
     right: 0;
-    border-right: 2px solid #9C7262;
-    border-bottom: 2px solid #9C7262;
+    border-right: 2px solid #48906f;
+    border-bottom: 2px solid #48906f;
     transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
 }
 .border-button:hover:before,
@@ -478,7 +477,7 @@ nav ul li a {
     height: 100%;
     padding: 5px 0;
     text-decoration: none;
-    color: #aaa;
+    color: #9c7262;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -486,6 +485,9 @@ nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
     transition: all .5s;
+}
+nav ul li a {
+    transition: 0s !important;
 }
 nav ul li a:hover {
     color: #48906f;
@@ -525,7 +527,7 @@ nav.fill ul li a:after {
     opacity: 0;
 }
 nav.fill ul li a:hover {
-    color: #fff;
+    color: #aaa;
     z-index: 1;
 }
 nav.fill ul li a:hover:after {
