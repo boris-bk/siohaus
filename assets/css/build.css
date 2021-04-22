@@ -22,9 +22,12 @@
 .h1-left {
     width: 60%;
 }
-.middle-h1  h1 {
+.middle-h1  h1, .h2-dec {
     text-align: left;
     font-size: 3.8vw;
+}
+.h2-dec {
+    margin: 20px 4%;
 }
 .h1-left p, .strength-left p {
     margin: 0 0 10px 0;
@@ -102,6 +105,9 @@ ol li {
     }
     .middle-h1 p {
         margin: 0 !important;
+    }
+    .h2-dec {
+        margin: 10px 2%;
     }
 }
 @media only screen and (max-width: 700px) {
