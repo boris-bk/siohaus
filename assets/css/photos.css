@@ -116,8 +116,7 @@ td {
 }
 @media only screen and (max-width: 1000px) {
     .slider__item img {
-        width: 80% !important;
-        height: auto;
+        height: 50vw;
     }
     .slider-nav .slider__item img {
         height: 15vw;

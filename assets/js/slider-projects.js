@@ -190,7 +190,7 @@ $(document).ready(function(){
 		focusOnSelect: true
 	});
 	$('.slider-for-6').slick({
-		slidesToShow: 5,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
 		fade: false,
