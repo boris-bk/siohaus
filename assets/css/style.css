@@ -96,42 +96,6 @@ header {
 .mob {
     display: none;
 }
-.menu-bar-wrap {
-    display: none;
-}
-.menu-bar-wrap h2 {
-    display: none;
-    margin: 0 1vw;
-    font-size: 3rem;
- }
-.menu-bar {
-    width: 80vw;
-    position: fixed;
-    left: 10vw;
-    display: flex;
-    justify-content: center;
-}
-.menu-bar a {
-    color: #444;
-    padding: 0 10px;
-    font-size: 24px;
-    margin-right: -5px;
-    border-left: 2px solid #017152;
-    position: relative;
-    top: -1px;
-}
-.menu-bar .active {
-    color: #77b255;
-    border-left: 2px solid #77b255;
-}
-.menu-bar a:hover, .menu-bar a:active {
-    color: #fff;
-    background-color: #017152;
-    z-index: 15;
-}
-.menu-bar a:nth-child(1){
-    border-left: none;
-}
 .middle h1 {
     text-align: center;
     font-size: 60px;
@@ -675,34 +639,7 @@ nav.shift ul li a:hover:after {
         font-size: 12px;
     }
 }
-
 @media only screen and (max-width: 960px) {
-    .menu-bar-wrap h2 {
-        display: inline;
-    }
-    .menu-show {
-        height: 309px;
-    }
-    .menu-bar {
-        display: none;
-        width: 100vw;
-        left: 0;
-        background-color: rgba(245,255,245,.6);
-    }
-    .menu-bar a {
-        display: block;
-    }
-    .menu-bar a:nth-child(1) {
-        border-left: 2px solid #017152;
-    }
-    .menu-bar .active {
-        border: 2px solid #77b255 !important;
-        width: 100vw;
-        border-right: none !important;
-    }
-    .menu-icon-wrapper {
-        display: flex;
-    }
     .mid-vid {
         flex-wrap: wrap;
     }
@@ -791,15 +728,6 @@ nav.shift ul li a:hover:after {
         margin: 0;
     }
 }
-@media only screen and (max-width: 840px) {
-    .menu-bar {
-        width: 96vw;
-        left: 0vw;
-    }
-    .menu-bar-wrap {
-        top: 70px;
-    }
-}
 @media only screen and (max-width: 780px) {
     .middle h1 {
         font-size: 6vw;
@@ -846,7 +774,6 @@ nav.shift ul li a:hover:after {
         color: #48906f;
     }
 }
-
 @media only screen and (max-width: 730px) {
     .foot-links {
         flex-wrap: wrap;
@@ -856,13 +783,7 @@ nav.shift ul li a:hover:after {
         text-align: center;
     }
 }
-@media only screen and (max-width: 700px) {
-
-}
 @media only screen and (max-width: 550px) {
-    .menu-bar-wrap {
-        top: 50px;
-    }
     .middle h1 {
         font-size: 8vw;
     }
@@ -925,7 +846,6 @@ nav.shift ul li a:hover:after {
         width: 100%;
         margin: 20px 0;
     }
-
 }
 @media only screen and (max-width: 400px) {
     .phones {
@@ -937,12 +857,5 @@ nav.shift ul li a:hover:after {
         margin: 5px 0;
     }
 }
-@media only screen and (max-width: 375px) {
-
-}
-@media only screen and (max-width: 320px) {
-
-}
-
 
 
