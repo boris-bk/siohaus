@@ -137,6 +137,9 @@ td {
     .slider-nav .slider__item img {
         height: 25vw;
     }
+    .slider__item img {
+        height: 65vw;
+    }
 }
 @media only screen and (max-width: 500px) {
     .slider-nav .slider__item img {
