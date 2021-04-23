@@ -1,0 +1,192 @@
+.navigate {
+    margin: 10px 4%;
+}
+.a-home {
+    color: #444444;
+    font-size: 13px;
+    font-weight: 500;
+}
+.a-home:hover {
+    color: #48906f;
+}
+.a-home svg {
+    width: 20px;
+    color: #444444;
+    position: relative;
+    top: 3px;
+}
+.example {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 4%;
+}
+.example-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.example-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 40%;
+}
+.box {
+    width: 23%;
+    padding-top: 25%;
+    position: relative;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.image__wrapper {
+    width: 100%;
+}
+/* картинка на странице */
+.minimized {
+    width: 100%;
+    cursor: pointer;
+}
+.minimized:hover {
+    box-shadow:
+            1px 1px #48906f,
+            2px 2px #48906f,
+            3px 3px #48906f,
+            4px 4px #48906f,
+            5px 5px #48906f,
+            6px 6px #48906f,
+            7px 7px #48906f;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+.example-info {
+    width: 55%;
+}
+.example-info p {
+    text-align: left;
+    margin-top: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: max-content !important;
+}
+table tr:first-child {
+    border-top: none;
+}
+table tr {
+    border: 1px solid #E3E3E3;
+    border-left: none;
+    border-right: none;
+}
+table td, .descr table th {
+    padding: 10px 5px;
+    font: 300 15px/16px roboto;
+}
+/* увеличенная картинка */
+#magnify {
+    display: none;
+    top: 10% !important;
+    left: 20% !important;
+    position: fixed;
+    width: 60%;
+    height: auto;
+    z-index: 9999;
+}
+#magnify img {
+    width: 100%;
+}
+/* затемняющий фон */
+#overlay {
+    display: none;
+
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 9990;
+}
+/* кнопка закрытия */
+#close-popup {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #48906f;
+}
+#close-popup i {
+    width: 30px;
+    height: 30px;
+    background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+    background-size: 16px 16px;
+    display: block;
+}
+@keyframes rota {
+    25% { transform: rotate(360deg); }
+}
+#close-popup:hover {
+    animation: rota 4s infinite normal;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+@media (max-width:900px){
+    .content{
+        font-size: 10px;
+        page-break-after: 3px;
+        text-transform: none;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navigate {
+        margin: 10px 2%;
+    }
+    .example {
+        flex-wrap: wrap;
+        margin: 30px 2%;
+    }
+    .example-photo {
+        width: 100%;
+    }
+    .image__wrapper-head {
+        width: 80%;
+        margin: auto;
+    }
+    .example-info {
+        width: 100%;
+    }
+    #magnify {
+        left: 5% !important;
+        width: 90%;
+    }
+    #close-popup {
+        width: 20px;
+        height: 20px;
+    }
+    #close-popup i {
+        width: 20px;
+        height: 20px;
+        background-size: 10px 10px;
+    }
+
+}
+@media (max-width:768px){
+    .content{
+        font-size: 10px;
+        page-break-after: 3px;
+        text-transform: none;
+    }
+}
