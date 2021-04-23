@@ -181,7 +181,9 @@ table td, .descr table th {
         height: 20px;
         background-size: 10px 10px;
     }
-
+    table {
+        width: 100% !important;
+    }
 }
 @media (max-width:768px){
     .content{
