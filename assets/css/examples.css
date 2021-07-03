@@ -7,7 +7,7 @@
     font-weight: 500;
 }
 .a-home:hover {
-    color: #48906f;
+    color: #BF3030;
 }
 .a-home svg {
     width: 20px;
@@ -57,13 +57,13 @@
 }
 .minimized:hover {
     box-shadow:
-            1px 1px #48906f,
-            2px 2px #48906f,
-            3px 3px #48906f,
-            4px 4px #48906f,
-            5px 5px #48906f,
-            6px 6px #48906f,
-            7px 7px #48906f;
+            1px 1px #BF3030,
+            2px 2px #BF3030,
+            3px 3px #BF3030,
+            4px 4px #BF3030,
+            5px 5px #BF3030,
+            6px 6px #BF3030,
+            7px 7px #BF3030;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
@@ -126,7 +126,7 @@ table td, .descr table th {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #48906f;
+    background: #BF3030;
 }
 #close-popup i {
     width: 30px;

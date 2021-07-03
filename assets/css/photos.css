@@ -15,7 +15,7 @@ td {
     font-weight: 500;
 }
 .a-home:hover {
-    color: #48906f;
+    color: #BF3030;
 }
 .a-home svg {
     width: 20px;
@@ -68,7 +68,7 @@ td {
 }
 .slick-prev:hover:before, .slick-next:hover:before {
     opacity: 1;
-    background: #9C7262;
+    background: #444;
     padding: 5px;
 }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
@@ -79,7 +79,7 @@ td {
     font-size: 40px;
     line-height: 1;
     opacity: .75;
-    color: #48906f;
+    color: #BF3030;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
